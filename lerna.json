@@ -1,0 +1,23 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.0.0",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "ignored-file",
+        "*.md",
+        "services/**/*"
+      ],
+      "registry": "https://npm.colorfy.me:4873"
+    },
+    "bootstrap": {
+      "scope": [
+        "@colorfy/*"
+      ]
+    }
+  }
+}
