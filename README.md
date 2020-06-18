@@ -1,3 +1,7 @@
+## Intro
+Template that can be used for writing microservices or a library/sdk.
+Solves problems like versioning, publishing, dependencies between packages, developing both the depending and dependant packages at the same time, building/installing all packages dependencies with one command, besides having the benefits of typescript and definition files..
+
 ## Adding a new package
 1. `lerna create ${packageName}`
 1. create a `src/index.ts` file
