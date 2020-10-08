@@ -4,8 +4,11 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Intro
-Template that can be used for writing microservices or any JavaScript library/sdk as a monorepository with typescript support and automated changelog generation.
+Template that can be used for working with monorepositories in typescript / javascript and automated changelog generation.
 Solves problems like versioning, publishing, dependencies between packages, developing both the depending and dependant packages at the same time, building/installing all packages dependencies with one command, besides having the benefits of typescript and definition files..
+
+## DEMO
+<iframe src="https://drive.google.com/file/d/1x6R1AQhA3G4fMBbIoS_0kcGVOIJJnsLe/preview" width="640" height="480"></iframe>
 
 ## Adding a new package
 1. `lerna create ${packageName}`
