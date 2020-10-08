@@ -1,6 +1,7 @@
 {
   "watch": [
-    "src"
+    "src",
+    "packages/**/lib/**"
   ],
   "ext": ".ts,.js",
   "ignore": [],

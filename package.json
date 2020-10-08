@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "build": "lerna bootstrap && lerna run tsc --parallel",
+    "watch": "lerna run watch --parallel",
     "start": "nodemon",
     "clean": "rm -rf lib/ packages/**/lib/** && lerna clean",
     "publish": "lerna run tsc --parallel && lerna publish",
@@ -53,9 +54,5 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "dependencies": {
-    "@myscope/servicea": "file:packages/serviceA",
-    "@myscope/serviceb": "file:packages/serviceB",
-    "@myscope/servicec": "file:packages/serviceC"
-  }
+  "dependencies": {}
 }
