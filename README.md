@@ -7,11 +7,6 @@
 Template that can be used for working with monorepositories in typescript / javascript and automated changelog generation.
 Solves problems like versioning, publishing, dependencies between packages, developing both the depending and dependant packages at the same time, building/installing all packages dependencies with one command, besides having the benefits of typescript and definition files..
 
-## DEMO
-<figure class="video_container">
-  <iframe src="https://drive.google.com/file/d/1x6R1AQhA3G4fMBbIoS_0kcGVOIJJnsLe/preview" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-
 ## Adding a new package
 1. `lerna create ${packageName}`
 1. create a `src/index.ts` file
