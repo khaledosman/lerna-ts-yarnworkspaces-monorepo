@@ -7,7 +7,7 @@
   "scripts": {
     "build": "lerna bootstrap && lerna run tsc --parallel",
     "start": "nodemon",
-    "clean": "rm -rf packages/**/lib/** && lerna clean",
+    "clean": "rm -rf lib/ packages/**/lib/** && lerna clean",
     "publish": "lerna run tsc --parallel && lerna publish",
     "commit": "npx git-cz",
     "release": "yarn publish"
