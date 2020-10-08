@@ -7,10 +7,13 @@
   "version": "independent",
   "command": {
     "publish": {
+      "conventionalCommits": true,
       "ignoreChanges": [
-        "ignored-file",
-        "*.md"
-      ],
+        "**/__tests__/**",
+        "**/*.md"
+      ]
+    },
+    "version": {
       "conventionalCommits": true
     },
     "bootstrap": {

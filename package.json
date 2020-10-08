@@ -9,7 +9,8 @@
     "start": "nodemon",
     "publish": "lerna run tsc && lerna publish",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "release": "lerna run tsc --parallel && lerna publish"
   },
   "husky": {
     "hooks": {
@@ -51,5 +52,10 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "@myscope/servicea": "file:packages/serviceA",
+    "@myscope/serviceb": "file:packages/serviceB",
+    "@myscope/servicec": "file:packages/serviceC"
   }
 }
