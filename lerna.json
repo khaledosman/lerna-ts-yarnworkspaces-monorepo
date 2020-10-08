@@ -8,9 +8,11 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
+      "message": "chore(release): publish",
       "ignoreChanges": [
         "**/__tests__/**",
-        "**/*.md"
+        "**/*.md",
+	"**/*/package.json
       ]
     },
     "version": {
