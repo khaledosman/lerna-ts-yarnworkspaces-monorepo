@@ -8,7 +8,9 @@ Template that can be used for working with monorepositories in typescript / java
 Solves problems like versioning, publishing, dependencies between packages, developing both the depending and dependant packages at the same time, building/installing all packages dependencies with one command, besides having the benefits of typescript and definition files..
 
 ## DEMO
-<iframe src="https://drive.google.com/file/d/1x6R1AQhA3G4fMBbIoS_0kcGVOIJJnsLe/preview" width="640" height="480"></iframe>
+<video width="640" height="480">
+<source src="https://drive.google.com/file/d/1x6R1AQhA3G4fMBbIoS_0kcGVOIJJnsLe/preview">
+</video>
 
 ## Adding a new package
 1. `lerna create ${packageName}`
