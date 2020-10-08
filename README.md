@@ -4,18 +4,18 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Intro
-Template that can be used for writing microservices or a library/sdk.
+Template that can be used for writing microservices or any JavaScript library/sdk as a monorepository with typescript support and automated changelog generation.
 Solves problems like versioning, publishing, dependencies between packages, developing both the depending and dependant packages at the same time, building/installing all packages dependencies with one command, besides having the benefits of typescript and definition files..
 
 ## Adding a new package
 1. `lerna create ${packageName}`
 1. create a `src/index.ts` file
-1. add `tsc` to scripts in package.json
-2. add watch script to package.json to automatically rebuild dist files on src file changes `"watch": "tsc --watch"` so you can automatically reuse the built js files in depending services
-3. copy `tsconfig.json` from one of the other files which extends the root tsconfig file
-4. add `"typings": "lib/index.d.ts"` in package.json to link to the generated .d.ts file for types reference
-5. to build all packages simply run `lerna run tsc`
-6. You can import shared packages by their name in package.json, its a best practice to use npm scopes in package names.. i.e (@namespace/serviceA)
+1. add `tsc` and `watch` to scripts in package.json
+2. copy `tsconfig.json` from one of the other files which extends the root tsconfig file
+3. add `"typings": "lib/index.d.ts"` in package.json to link to the generated .d.ts file for types reference
+4. to build all packages simply run `lerna run tsc` or in development mode to rebuild when any of the dependent packages updates `lerna run watch`
+5. You can import shared packages by their name in package.json, its a best practice to use npm scopes in package names.. i.e (@namespace/serviceA)
+6. run the playground / main app with nodemon `yarn start`, now if you change any of the packages and restart the app you'll automatically see the new version
 
 ## Usage
 1. Run `lerna bootstrap` to link all packages and install their dependencies
