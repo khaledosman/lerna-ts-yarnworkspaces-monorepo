@@ -5,12 +5,12 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "rimraf ./lib && tsc",
+    "build": "lerna bootstrap && lerna run tsc --parallel",
     "start": "nodemon",
-    "publish": "lerna run tsc && lerna publish",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "clean": "rm -rf packages/**/lib/** && lerna clean",
+    "publish": "lerna run tsc --parallel && lerna publish",
     "commit": "npx git-cz",
-    "release": "lerna run tsc --parallel && lerna publish"
+    "release": "yarn publish"
   },
   "husky": {
     "hooks": {
