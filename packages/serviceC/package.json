@@ -1,8 +1,8 @@
 {
-  "name": "@myscope/servicea",
-  "version": "0.0.0",
+  "name": "@myscope/servicec",
+  "version": "1.0.0",
   "description": "> TODO: description",
-  "author": "Khaled Osman <khaled.osmaan@gmail.com>",
+  "author": "khaledosman <khaled.osmaan@gmail.com>",
   "homepage": "https://github.com/khaledosman/lerna-ts-yarnworkspaces-monorepo#readme",
   "license": "ISC",
   "main": "lib/index.js",
@@ -14,16 +14,16 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.com/"
-  },
   "repository": {
     "type": "git",
-    "url": "git@github.com:khaledosman/lerna-ts-yarnworkspaces-monorepo.git"
+    "url": "git+https://github.com/khaledosman/lerna-ts-yarnworkspaces-monorepo.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
     "tsc": "tsc",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/khaledosman/lerna-ts-yarnworkspaces-monorepo/issues"
   }
 }

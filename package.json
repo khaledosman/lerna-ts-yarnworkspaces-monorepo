@@ -2,11 +2,10 @@
   "name": "root",
   "private": true,
   "workspaces": [
-    "services/*",
     "packages/*"
   ],
   "scripts": {
-    "build": "rimraf ./build && tsc",
+    "build": "rimraf ./lib && tsc",
     "start": "nodemon",
     "publish": "lerna run tsc && lerna publish",
     "commitmsg": "commitlint -e $GIT_PARAMS",

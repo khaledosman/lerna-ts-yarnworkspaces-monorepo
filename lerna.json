@@ -1,6 +1,5 @@
 {
   "packages": [
-    "services/*",
     "packages/*"
   ],
   "npmClient": "yarn",
@@ -10,8 +9,7 @@
     "publish": {
       "ignoreChanges": [
         "ignored-file",
-        "*.md",
-        "services/**/*"
+        "*.md"
       ],
       "conventionalCommits": true
     },

@@ -1,3 +1,8 @@
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 ## Intro
 Template that can be used for writing microservices or a library/sdk.
 Solves problems like versioning, publishing, dependencies between packages, developing both the depending and dependant packages at the same time, building/installing all packages dependencies with one command, besides having the benefits of typescript and definition files..
@@ -8,7 +13,7 @@ Solves problems like versioning, publishing, dependencies between packages, deve
 1. add `tsc` to scripts in package.json
 2. add watch script to package.json to automatically rebuild dist files on src file changes `"watch": "tsc --watch"` so you can automatically reuse the built js files in depending services
 3. copy `tsconfig.json` from one of the other files which extends the root tsconfig file
-4. add "typings": "build/index.d.ts" in package.json to link to the generated .d.ts file
+4. add `"typings": "lib/index.d.ts"` in package.json to link to the generated .d.ts file for types reference
 5. to build all packages simply run `lerna run tsc`
 6. You can import shared packages by their name in package.json, its a best practice to use npm scopes in package names.. i.e (@namespace/serviceA)
 

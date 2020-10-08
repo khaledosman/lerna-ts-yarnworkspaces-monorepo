@@ -1,7 +1,7 @@
 node_modules
 lerna-debug.log
 npm-debug.log
-packages/*/build
-build
+packages/*/lib
+lib
 .idea
 package-lock.json
