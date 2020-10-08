@@ -5,14 +5,14 @@
   "author": "Khaled Osman <khaled.osmaan@gmail.com>",
   "homepage": "https://github.com/khaledosman/lerna-ts-yarnworkspaces-monorepo#readme",
   "license": "ISC",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
   "directories": {
-    "lib": "lib",
+    "build": "build",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "build"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.com/"
