@@ -1,2 +1,2 @@
 import { sum } from '@myscope/serviceA'
-console.log(sum(1, 2))
+export const five = sum(3, 2)

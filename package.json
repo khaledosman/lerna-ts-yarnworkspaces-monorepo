@@ -5,11 +5,13 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna bootstrap && lerna run tsc --parallel",
-    "watch": "lerna run watch --parallel",
     "start": "nodemon",
+    "watch": "yarn bootstrap && lerna run watch --parallel",
+    "build": "yarn bootstrap && yarn tsc",
+    "tsc": "lerna run tsc --parallel",
+    "bootstrap": "lerna bootstrap",
     "clean": "rm -rf lib/ packages/**/lib/** && lerna clean",
-    "publish": "lerna run tsc --parallel && lerna publish",
+    "publish": "yarn tsc && lerna publish",
     "commit": "npx git-cz",
     "release": "yarn publish"
   },
