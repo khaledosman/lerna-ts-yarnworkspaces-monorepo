@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-const serviceB = require('..');
+const serviceB = require('..')
 
 describe('serviceB', () => {
-    it('needs tests');
-});
+  it('needs tests')
+})

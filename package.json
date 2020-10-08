@@ -12,6 +12,12 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "commit": "npx git-cz"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx standardx packages/**/*.ts src/**/*.ts --fix",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "standardx": {
     "parser": "@typescript-eslint/parser",
     "plugins": [
