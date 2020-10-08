@@ -1,3 +1,3 @@
 // playground
-import { sum } from '@colorfy/serviceA'
+import { sum } from '@myscope/serviceA'
 console.log(sum(1, 2))

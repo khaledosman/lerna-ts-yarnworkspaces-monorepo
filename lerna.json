@@ -2,9 +2,9 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.0",
   "npmClient": "yarn",
   "useWorkspaces": true,
+  "version": "independent",
   "command": {
     "publish": {
       "ignoreChanges": [
@@ -12,11 +12,11 @@
         "*.md",
         "services/**/*"
       ],
-      "registry": "https://npm.colorfy.me:4873"
+      "conventionalCommits": true
     },
     "bootstrap": {
       "scope": [
-        "@colorfy/*"
+        "@myscope/*"
       ]
     }
   }
