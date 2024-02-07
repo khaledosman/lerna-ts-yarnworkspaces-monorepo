@@ -3,7 +3,6 @@
     "packages/*"
   ],
   "npmClient": "yarn",
-  "useWorkspaces": true,
   "version": "independent",
   "command": {
     "publish": {
@@ -12,7 +11,7 @@
       "ignoreChanges": [
         "**/__tests__/**",
         "**/*.md",
-	"**/*/package.json
+        "**/*/package.json"
       ]
     },
     "version": {

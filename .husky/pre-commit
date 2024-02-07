@@ -1,0 +1,1 @@
+npx standardx packages/**/*.ts src/**/*.ts --fix

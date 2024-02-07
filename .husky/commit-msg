@@ -1,0 +1,3 @@
+#npx commitlint -E HUSKY_GIT_PARAMS
+npx --no -- commitlint --edit $1
+
